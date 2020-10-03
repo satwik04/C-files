@@ -1,16 +1,16 @@
 #include<stdio.h>
 long int factorial(int n);
 int main() {
-    int n;
+    int a;
     printf("Enter a positive integer: ");
-    scanf("%d",&n);
-    printf("Factorial of %d = %ld", n, factorial(n));
+    scanf("%d",&a);
+    printf("Factorial of %d = %ld",a, factorial(a));
     return 0;
 }
 
-long int factorial(int n) {
-    if (n>=1)
-        return n*multiplyNumbers(n-1);
+long int factorial(int a) {
+    if (a>=1)
+        return a*multiplyNumbers(a-1);
     else
         return 1;
 }
